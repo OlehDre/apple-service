@@ -1,0 +1,28 @@
+{
+  "name": "apple-service",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "serve": "concurrently \"npm run dev\" \"npm run mock\"",
+    "mock": "json-server -w db.json -p 4200 -d 1750"
+  },
+  "dependencies": {
+    "git": "^0.1.5",
+    "next": "12.2.5",
+    "nextjs-progressbar": "^0.0.14",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.15",
+    "@types/react": "^18.0.18",
+    "concurrently": "^7.3.0",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5",
+    "sass": "^1.54.8"
+  }
+}
