@@ -1,4 +1,4 @@
-import Router from "next/router"
+import Router from "../../node_modules/next/router"
 import { MainLayout } from "../../components/MainLayout"
 
 export default function About({ title }){
@@ -9,10 +9,10 @@ export default function About({ title }){
 
     return(
         <MainLayout title="About page">
-            <h1>{title}</h1>
-
-            <button onClick={linkClickHandler}>Go back to home</button>
-            <button onClick={() => Router.push('/posts') }>Go to posts</button>
+            <h1>{title}</h1><br/><br/>
+            <h1>Наши услуги:</h1><br/><br/>
+            <button onClick={linkClickHandler}>Проконсультироваться в телеграмме</button><br/><br/>
+            <button onClick={() => Router.push('/posts') }>Получить звонок с консультацией</button>
         </MainLayout>
     )
 }

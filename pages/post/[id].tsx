@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
-import Link from "next/link"
+import Link from '../../node_modules/next/link'
 import { MainLayout } from "../../components/MainLayout"
-import { useRouter } from 'next/router'
+import { useRouter } from '../../node_modules/next/router'
 import { NextPageContext } from '../../node_modules/next/dist/shared/lib/utils'
 import { MyPost } from '../../interfaces/post'
 

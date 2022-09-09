@@ -1,8 +1,9 @@
-import Link from 'next/link'
+import Link from '../node_modules/next/link'
 import {useState, useEffect} from 'react'
 import { MainLayout } from "../components/MainLayout"
 import {MyPost} from '../interfaces/post'
 import { NextPageContext } from '../node_modules/next/dist/shared/lib/utils'
+
 
 interface PostsPageProps{
     posts: MyPost[]
@@ -50,7 +51,7 @@ export default function Posts({ posts: serverPosts }: PostsPageProps){
     return(
         <MainLayout title="Posts page">
             <input className='searchField' />
-            <h1>Catalog</h1>
+            <h1>Каталог</h1>
             <ul>
                 {posts.map(post => (
                     <li key={post.id}>

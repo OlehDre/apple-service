@@ -1,5 +1,5 @@
-import Link from "next/link"
-import Head from "next/head"
+import Link from "../node_modules/next/link"
+import Head from "../node_modules/next/head"
 import {Footer} from '../components/FooterLayout'
 
 export function MainLayout( {children, title = 'Next App' } ) {
@@ -12,12 +12,15 @@ export function MainLayout( {children, title = 'Next App' } ) {
                 <title>{title} || Apple Service</title>
             </Head>
 
-            <nav>
+            <header>
                 <Link href={'/'}><a className="logo">Apple Service</a></Link>
-                <Link href={'/'}><a>Home</a></Link>
-                <Link href={'/about'}><a>About</a></Link>
-                <Link href={'/posts'}><a>Posts</a></Link>
-            </nav>
+                <nav>
+                    <Link href={'/'}><a>Главная</a></Link>
+                    <Link href={'/posts'}><a>Каталог</a></Link>
+                    <Link href={'/about'}><a>Услуги</a></Link>
+                    <Link href={'/contacts'}><a>Контакты</a></Link>
+                </nav>
+            </header>
             
             <main>
                 {children}
@@ -26,13 +29,18 @@ export function MainLayout( {children, title = 'Next App' } ) {
             <Footer></Footer>            
 
             <style jsx>{`
-                nav{
+                header{
                     position: fixed;
                     height: 60px;
                     left: 0;
                     top: 0;
                     right: 0;
                     background: #718F54;
+                    align-items: center;
+                    display: flex;
+                    justify-content: space-around;
+                }
+                nav{
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
@@ -41,15 +49,24 @@ export function MainLayout( {children, title = 'Next App' } ) {
                 nav a{
                     color: #fff;
                     text-decoration: none;
+                    margin: 0 50px;
+                    transition: all .3s ease-out;
+                }
+
+                nav a:hover{
+                    color: #aeaeae;
                 }
 
                 main{
                     margin-top: 60px;
                     padding: 50px;
+                    height: 1000px;
                 }
 
                 .logo{
                     font-size: 1.6em;
+                    color: #fff;
+                    text-decoration: none;
                 }
             `}</style>
         </>
