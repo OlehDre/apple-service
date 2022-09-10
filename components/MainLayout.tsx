@@ -59,7 +59,7 @@ export function MainLayout( {children, title = 'Next App' } ) {
 
                 main{
                     margin-top: 60px;
-                    height: 1100px;
+                    min-height: 1100px;
                 }
 
                 .logo{

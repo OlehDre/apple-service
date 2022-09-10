@@ -56,7 +56,11 @@ export default function Posts({ posts: serverPosts }: PostsPageProps){
                     {posts.map(post => (
                         <li key={post.id}>
                             <Link href={`/post/[id]`} as={`/post/${post.id}`}>
-                                <a>{post.title}</a>
+                                <a>{post.title}<br/>
+                                <span className='spanModel'>Модель: Samsung M321J Pro</span><br/>
+                                <span className='spanPrecent'>Есть в наличии</span><br/>
+                                <span className='spanPrice'>10.000</span>
+                                </a>
                             </Link>
                         </li>
                     ))}
@@ -71,7 +75,6 @@ export default function Posts({ posts: serverPosts }: PostsPageProps){
                     color: #000;
                     font-size: 1.2em;
                     display: block;
-                    height: 90px;
                     background: #f0f0f0;
                     margin: 30px;
                     padding: 30px;
@@ -80,6 +83,18 @@ export default function Posts({ posts: serverPosts }: PostsPageProps){
                 }
                 li a:hover{
                     background: #aaa;
+                }
+                a span{
+                    display: block;
+                    margin: 3px 15px;
+                }
+                .spanModel{
+                    padding-top: 20px;
+                    font-size: 0.9em;
+                }
+                .spanPrecent{
+                    color: green;
+                    font-size: 0.9em;
                 }
             `}</style>
         </MainLayout>

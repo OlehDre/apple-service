@@ -84,7 +84,7 @@ export default function Post({ post: serverPost }: PostPageProps){
                     margin-top: 50px;
                     border-radius: 10px;
                     font-size: 1.2em;
-                    box-shadow: 3px 2px 15px #555;
+                    box-shadow: 3px 3px 10px #777;
                     transition: all .2s ease-out;
                 }
 

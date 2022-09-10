@@ -4,12 +4,12 @@ export default function Index(){
     return(
         <MainLayout title="Home page"> 
             <div className="imgScreen">
-                <h1 className="battleRoar">Apple Service - гарантия качества и вашего спокойствия</h1>
+                <h1 className="battleRoar">Желаете отремонтировать дисплей?</h1>
             </div>
 
             <div className="container">
-                <p>Apple Service - сервис ремонта ваших девайсов</p><br/>
-                <p>Профессиональное восстановление дисплеев iPhone, Apple Watch, iPad, а также восстановление дисплеев Аndroid смартфонов.Ремонт телефонов любой сложности.Поклейка защитных стёкл."</p>
+                <h2>Apple Service - сервис ремонта ваших девайсов</h2><br/>
+                <h3>Профессиональное восстановление дисплеев iPhone, Apple Watch, iPad, а также восстановление дисплеев Аndroid смартфонов.Ремонт телефонов любой сложности.Поклейка защитных стёкл."</h3><br/>
                 <ul>
                     <li>
                         Качественный ремонт вашей техники
@@ -34,17 +34,17 @@ export default function Index(){
             <style jsx>{`
                 .imgScreen{
                     width: 100%;
-                    height: 707px;
+                    height: 300px;
                     background: url("/firstScreen.jpg") center;
                     background-size: cover;
                     text-align: center;
-                    padding-top: 600px;
+                    padding-top: 200px;
                 }
 
                 .battleRoar{
                     color: #fff;
                     font-size: 3em;
-                    text-shadow: 1px 0px 20px #000;
+                    text-shadow: 2px 2px 15px #000;
                 }
             `}</style>
         </MainLayout>   
