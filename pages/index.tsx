@@ -24,6 +24,10 @@ export default function Index(){
                     <li>качественно</li>
                     <li>с гарантией</li>
                 </ul>
+
+                <div>
+                    
+                </div>
             </div>
 
 

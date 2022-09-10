@@ -76,12 +76,20 @@ export default function Post({ post: serverPost }: PostPageProps){
 
                 button{
                     width: 30%;
-                    height: 30px;
-                    background: green;
+                    height: 50px;
+                    background: #32a852;
                     cursor: pointer;
                     border: none;
                     padding: 5px;
                     margin-top: 50px;
+                    border-radius: 10px;
+                    font-size: 1.2em;
+                    box-shadow: 3px 2px 15px #555;
+                    transition: all .2s ease-out;
+                }
+
+                button:hover{
+                    box-shadow: 1px 0px 15px #32a852;
                 }
             `}</style>
         </MainLayout>
