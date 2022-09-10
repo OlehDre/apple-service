@@ -6,12 +6,15 @@ export default function Contacts(){
     return(
         <>
             <MainLayout>
-                <h1>Наши контакты</h1>
-                <br/><br/>
-                <p>+(38)000-000-00-00</p><br/>
-                <p>Telegram</p><br/>
-                <p>Instagram</p><br/>
-                <p>Adress /../.../..</p>
+                <div className="container">
+                    <h1>Наши контакты</h1>
+                    <br/><br/>
+                    <p>Телефон: +(38)0996034010</p><br/>
+                    <Link href={'http://t.me/apple_service'}><a>Telegram</a></Link><br/>
+                    <Link href={'https://www.instagram.com/apple_service_sumy/'}><a>Instagram</a></Link><br/><br/>
+                    <p>Adress: ТРЦ «Лавина» 1 эт</p><br/>
+                    <p>Время работы 10:00-20:00</p>
+                </div>
             </MainLayout>
         </>
     )

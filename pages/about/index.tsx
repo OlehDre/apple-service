@@ -9,10 +9,12 @@ export default function About({ title }){
 
     return(
         <MainLayout title="About page">
-            <h1>{title}</h1><br/><br/>
-            <h1>Наши услуги:</h1><br/><br/>
-            <button onClick={linkClickHandler}>Проконсультироваться в телеграмме</button><br/><br/>
-            <button onClick={() => Router.push('/posts') }>Получить звонок с консультацией</button>
+            <div className="container">
+                <h1>{title}</h1><br/><br/>
+                <h1>Наши услуги:</h1><br/><br/>
+                <button onClick={linkClickHandler}>Проконсультироваться в телеграмме</button><br/><br/>
+                <button onClick={() => Router.push('/posts') }>Получить звонок с консультацией</button>
+            </div>
         </MainLayout>
     )
 }

@@ -1,5 +1,5 @@
 import '../styles/main.scss'
-import NextNProgress from "nextjs-progressbar";
+import NextNProgress from '../node_modules/nextjs-progressbar/dist/index'
 
 export default function MyApp({ Component, pageProps }){
 

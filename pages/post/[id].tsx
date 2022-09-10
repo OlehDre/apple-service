@@ -35,10 +35,55 @@ export default function Post({ post: serverPost }: PostPageProps){
 
     return(
         <MainLayout>
-            <h1>{post.title}</h1>
-            <hr />
-            <p>{post.body}</p>
-            <Link href={'/posts'}><a>Back to all posts</a></Link>
+            <div className="container">
+                <h1 className='postTitle'>{post.title}</h1>
+                
+                <ul>
+                    <li>
+                        Модель телефона: ...
+                    </li>
+                    <li>
+                        Наличие: ...
+                    </li>
+                    <li>
+                        Производитель: ...
+                    </li>
+                    <li>
+                        Тип экрана: ...
+                    </li>
+                </ul>
+
+                <span>50.000,50UA</span>
+
+                <p className='postBody'>{post.body}</p>
+                <Link href={'/posts'}><a>Back to all posts</a></Link><br/>
+                <button>Связаться с продавцом</button>
+            </div>
+            <style jsx>{`
+                .postTitle{
+                    margin-bottom: 50px;
+                }
+
+                .postBody{
+                    padding: 50px;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 1.2em;
+                }
+
+                button{
+                    width: 30%;
+                    height: 30px;
+                    background: green;
+                    cursor: pointer;
+                    border: none;
+                    padding: 5px;
+                    margin-top: 50px;
+                }
+            `}</style>
         </MainLayout>
     )
 }

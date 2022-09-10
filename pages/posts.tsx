@@ -50,17 +50,18 @@ export default function Posts({ posts: serverPosts }: PostsPageProps){
 
     return(
         <MainLayout title="Posts page">
-            <input className='searchField' />
-            <h1>Каталог</h1>
-            <ul>
-                {posts.map(post => (
-                    <li key={post.id}>
-                        <Link href={`/post/[id]`} as={`/post/${post.id}`}>
-                            <a>{post.title}</a>
-                        </Link>
-                    </li>
-                ))}
-            </ul>
+            <div className="container">
+                <h1>Каталог</h1>
+                <ul>
+                    {posts.map(post => (
+                        <li key={post.id}>
+                            <Link href={`/post/[id]`} as={`/post/${post.id}`}>
+                                <a>{post.title}</a>
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
             <style jsx>{`
                 li{
                     list-style-type: none;
@@ -79,12 +80,6 @@ export default function Posts({ posts: serverPosts }: PostsPageProps){
                 }
                 li a:hover{
                     background: #aaa;
-                }
-                .searchField{
-                    height: 25px;
-                    width: 200px;
-                    padding: 3px;
-                    margin: 0 600px;
                 }
             `}</style>
         </MainLayout>

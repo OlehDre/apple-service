@@ -54,12 +54,11 @@ export function MainLayout( {children, title = 'Next App' } ) {
                 }
 
                 nav a:hover{
-                    color: #aeaeae;
+                    color: #000;
                 }
 
                 main{
                     margin-top: 60px;
-                    padding: 50px;
                     height: 1000px;
                 }
 
