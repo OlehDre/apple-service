@@ -51,7 +51,6 @@ export default function Posts({ posts: serverPosts }: PostsPageProps){
     return(
         <MainLayout title="Posts page">
             <div className="container">
-                <h1>Каталог</h1>
                 <ul>
                     {posts.map(post => (
                         <li key={post.id}>

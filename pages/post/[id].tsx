@@ -57,7 +57,7 @@ export default function Post({ post: serverPost }: PostPageProps){
 
                 <p className='postBody'>{post.body}</p>
                 <Link href={'/posts'}><a>Back to all posts</a></Link><br/>
-                <button>Связаться с продавцом</button>
+                <Link href={'http://t.me/apple_service'}><button>Связаться с продавцом</button></Link>
             </div>
             <style jsx>{`
                 .postTitle{

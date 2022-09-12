@@ -35,7 +35,7 @@ export function MainLayout( {children, title = 'Next App' } ) {
                     left: 0;
                     top: 0;
                     right: 0;
-                    background: #32a852;
+                    background: #000;
                     align-items: center;
                     display: flex;
                     justify-content: space-around;
@@ -54,7 +54,7 @@ export function MainLayout( {children, title = 'Next App' } ) {
                 }
 
                 nav a:hover{
-                    color: #555;
+                    color: #47ecff;
                 }
 
                 main{

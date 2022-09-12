@@ -1,10 +1,12 @@
 import { MainLayout } from "../components/MainLayout"
+import Link from "../node_modules/next/link"
 
 export default function Index(){
     return(
         <MainLayout title="Home page"> 
             <div className="imgScreen">
                 <h1 className="battleRoar">Желаете отремонтировать дисплей?</h1>
+                <Link href={'http://t.me/apple_service'}><button className="imgScreenBtn">Связаться с продавцом</button></Link>
             </div>
 
             <div className="container">
@@ -26,25 +28,47 @@ export default function Index(){
                 </ul>
 
                 <div>
-                    
+                    <Link href={'https://docs.google.com/spreadsheets/d/1QYt6ruATG9LLRYhRdYTFfNlDRjcN6CdsJ5rQjwrMMcg/edit?usp=sharing'}><button className="imgScreenBtn">Связаться с продавцом</button></Link>
                 </div>
             </div>
 
 
             <style jsx>{`
                 .imgScreen{
+                    display: flex;
+                    flex-direction: column;
                     width: 100%;
                     height: 300px;
-                    background: url("/firstScreen.jpg") center;
-                    background-size: cover;
-                    text-align: center;
-                    padding-top: 200px;
+                    background: #e3e3e3;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .imgScreenBtn{
+                    
                 }
 
                 .battleRoar{
-                    color: #fff;
+                    color: #000;
                     font-size: 3em;
-                    text-shadow: 2px 2px 15px #000;
+                }
+
+                button{
+                    width: 30%;
+                    height: 50px;
+                    background: #32a852;
+                    cursor: pointer;
+                    border: none;
+                    padding: 5px;
+                    margin-top: 50px;
+                    border-radius: 10px;
+                    font-size: 1.2em;
+                    box-shadow: 3px 3px 10px #777;
+                    transition: all .2s ease-out;
+                }
+
+                button:hover{
+                    box-shadow: 1px 0px 15px #32a852;
                 }
             `}</style>
         </MainLayout>   

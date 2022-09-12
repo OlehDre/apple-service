@@ -22,6 +22,7 @@ export function Footer(){
             <style jsx>{`
                 footer{
                     background: #000;
+                    width: 100%;
                     align-items: center;
                     height: 150px;
                     display: flex;

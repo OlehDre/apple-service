@@ -1,5 +1,6 @@
 import Router from "../../node_modules/next/router"
 import { MainLayout } from "../../components/MainLayout"
+import Link from "../../node_modules/next/link"
 
 export default function About({ title }){
 
@@ -10,7 +11,6 @@ export default function About({ title }){
     return(
         <MainLayout title="About page">
             <div className="container">
-                <h1>{title}</h1><br/><br/>
                 <div>
                     <h2>Ремонт iPhone, iPad, MacBook и Apple Watch</h2><br/>
                     <ul>
@@ -52,8 +52,8 @@ export default function About({ title }){
                          Мы отвечаем за качество выполненных работ, поэтому предоставляем гарантию на все устанавливаемые комплектующие!
                     </p>
                 </div>
-                <button onClick={linkClickHandler}>Проконсультироваться в телеграмме</button><br/><br/>
-                <button onClick={() => Router.push('/posts') }>Получить звонок с консультацией</button>
+                <button onClick={linkClickHandler}>На главную</button><br/><br/>
+                <Link href={'http://t.me/apple_service'}><button onClick={() => Router.push('/posts') }>Получить звонок с консультацией</button></Link>
             </div>
 
             <style jsx>{`
