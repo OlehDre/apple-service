@@ -9,7 +9,7 @@ export default function About(){
     }
 
     return(
-        <MainLayout title="About page">
+        <MainLayout>
             <div className="container">
                 <div>
                     <h2>Ремонт iPhone, iPad, MacBook и Apple Watch</h2><br/>
