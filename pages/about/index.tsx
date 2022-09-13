@@ -2,7 +2,7 @@ import Router from "../../node_modules/next/router"
 import { MainLayout } from "../../components/MainLayout"
 import Link from "../../node_modules/next/link"
 
-export default function About({ title }){
+export default function About(){
 
     const linkClickHandler = () => {
         Router.push('/')
