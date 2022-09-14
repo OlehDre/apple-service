@@ -6,6 +6,11 @@ export function MainLayout( {children, title = 'Next App' } ) {
     return(
         <>
             <Head>
+            <meta name='viewport' content='width=device-width,initial-scale=0.4'/>
+            <meta content='true' name='HandheldFriendly'/>
+            <meta content='width' name='MobileOptimized'/>
+            <meta content='yes' name='apple-mobile-web-app-capable'/>
+
                 <meta name="keywords" content="ключевое слово 1, ключевое слово 2, ключевое слово 3" />
                 <meta name="description" content="this is my project for Apple Service Sumy" />
                 <meta charSet="utf-8" />
@@ -60,6 +65,7 @@ export function MainLayout( {children, title = 'Next App' } ) {
                 main{
                     margin-top: 60px;
                     min-height: 1100px;
+                    margin-bottom: 100px;
                 }
 
                 .logo{
