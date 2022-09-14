@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "serve": "concurrently \"npm run dev\" \"npm run mock\"",
-    "mock": "json-server -w db.json -p 4200 -d 100",
-    "build serve": "concurrently \"npm run build\" \"npm run mock\""
+    "mock": "json-server -w db.json -p 4200 -d 100"
   },
   "dependencies": {
     "git": "^0.1.5",
