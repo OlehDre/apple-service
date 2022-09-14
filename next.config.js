@@ -8,6 +8,6 @@ module.exports = nextConfig
 
 module.exports = {
   env: {
-    API_URL: 'http://localhost:4200'
+    API_URL: 'https://my-json-server.typicode.com/OlehDre/apple-service/db.json'
   }
 }

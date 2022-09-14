@@ -14,8 +14,9 @@ export default function Posts({ posts: serverPosts }: PostsPageProps){
 
     useEffect(() => {
         async function load(){
-           const response = await fetch('http://localhost:4200/posts')
+           const response = await fetch('https://my-json-server.typicode.com/OlehDre/apple-service/posts')
            const json = await response.json()
+           console.log(json)
            setPosts(json)
         }
 
