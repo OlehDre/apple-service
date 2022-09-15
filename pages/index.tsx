@@ -6,7 +6,7 @@ export default function Index(){
         <MainLayout title="Home page"> 
             <div className="imgScreen">
                 <h1 className="battleRoar">Желаете отремонтировать дисплей?</h1>
-                <Link href={'http://t.me/apple_service'}><button className="imgScreenBtn">Связаться с продавцом</button></Link>
+                <Link href={'https://t.me/+vo44J-tEGkZmOWYy'}><button className="imgScreenBtn">Связаться с продавцом</button></Link>
             </div>
 
             <div className="container">

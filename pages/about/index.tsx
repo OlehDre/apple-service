@@ -53,7 +53,7 @@ export default function About(){
                     </p>
                 </div>
                 <button onClick={linkClickHandler}>На главную</button><br/><br/>
-                <Link href={'http://t.me/apple_service'}><button onClick={() => Router.push('/posts') }>Получить звонок с консультацией</button></Link>
+                <Link href={'https://t.me/+vo44J-tEGkZmOWYy'}><button onClick={() => Router.push('/posts') }>Получить звонок с консультацией</button></Link>
             </div>
 
             <style jsx>{`

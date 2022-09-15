@@ -13,7 +13,7 @@ export function Footer(){
                     <Link href={'/contacts'}><a>Контакты</a></Link>
                 </nav>
                 <div className="socialLinks">
-                    <Link href={'http://t.me/apple_service'}><a>Telegram</a></Link>
+                    <Link href={'https://t.me/+vo44J-tEGkZmOWYy'}><a>Telegram</a></Link>
                     <Link href={'https://www.instagram.com/apple_service_sumy/'}><a>Inst</a></Link>
                     <Link href={'https://www.instagram.com/apple_service_sumy/'}><a>Facebook</a></Link>
                 </div>
